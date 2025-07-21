@@ -2,17 +2,21 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const express = require("express");
+const path = require("path");
 const app = express();
 
-//  Always use Render's provided PORT
 const PORT = process.env.PORT || 3000;
 
+//  Serve static files (CSS, JS, Images)
+app.use(express.static(path.join(__dirname, "public")));
+
+//  Serve your index.html when someone opens the URL
 app.get("/", (req, res) => {
-  res.send(" My server is live on Render!");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log( 'Website is running on port ${PORT}');
 });
     const hostname = 'localhost'; // or process.env.HOSTNAME
     const port = 3000; // or process.env.PORT
