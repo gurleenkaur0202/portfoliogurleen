@@ -62,7 +62,7 @@
             font-weight: 700;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 1rem;
-            margin-left: -200px;
+            margin-left: -300px;
             text-transform: uppercase;
             letter-spacing: 3px;
             color: #ffffff;
@@ -75,7 +75,7 @@
             font-weight: 400;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 2rem;
-            margin-left: -200px;
+            margin-left: -300px;
             color: #cccccc;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
             animation: fadeIn 2s ease-in-out;
@@ -83,7 +83,7 @@
 
         .cta-button {
             display: inline-block;
-            margin-left: -200px;
+            margin-left: -300px;
             font-family: 'Times New Roman', Times, serif;
             padding: 15px 30px;
             background-color: #ff2a9f;
@@ -361,7 +361,44 @@
         .contact-card:hover {
             transform: translateY(-5px);
         }
+        .ask-card    {
+             display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ask-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .ask-circle {
+            width: 50px;
+            height: 50px;
+            background-color: #f50575;
+            border-radius: 50%;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+  color: white;
+  font-size: 40px;
+  flex-shrink: 0;
+}
+  
 
+   .ask-title {
+  font-size: 100px;
+  color: white;
+  font-weight: 800;
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+
+}
+
+
+        
         .contact-icon {
             width: 60px;
             height: 60px;
@@ -372,11 +409,13 @@
             align-items: center;
             font-size: 1.5rem;
         }
+        
 
         .contact-text h4 {
             color: white;
             margin-bottom: 5px;
         }
+        
 
         .contact-text p, .contact-text a {
             color: #aaaaaa;
@@ -391,6 +430,7 @@
         .contact-form {
             background-color: #2c2629;
             padding: 30px;
+            width: 600px;
             border-radius: 10px;
         }
 
@@ -570,6 +610,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#Ask">Ask</a></li>
+
         </ul>
     </nav>
 
@@ -651,6 +693,7 @@ Currently pursuing my BTech in Computer Science Engineering, I live at the inter
                         <a href="tel:8178126477">8178126477</a>
                     </div>
                 </div>
+                <section id="Ask" class="ask-card">
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
@@ -661,8 +704,15 @@ Currently pursuing my BTech in Computer Science Engineering, I live at the inter
                     </div>
                 </div>
             </div>
+            
              <div class="contact-form">
-                <form id="contactForm">
+                <div class="ask-card">
+                    <div class="ask-header">
+                    <div class="ask-circle">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <div class="ask-tittle">Ask Me Anything</div>
+                    </div>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
