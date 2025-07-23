@@ -207,7 +207,7 @@
 
         .about-text {
             flex: 2;
-            font-size: x-large;
+            font-size: 100px;
              width: 100%;
             height: 30%;
             font-family: 'Times New Roman', Times, serif;
@@ -217,6 +217,7 @@
             margin-bottom: 20px;
             width: 100%;
             height: 30%;
+            font-size: 22px;
             font-family: 'Times New Roman', Times, serif;
             color: #dddddd;
         }
@@ -257,84 +258,7 @@
             color: #aaaaaa;
         }
 
-        /* Projects Section */
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .project-card {
-            background-color: #2a2a2a;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .project-image {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-card:hover .project-image img {
-            transform: scale(1.1);
-        }
-
-        .project-info {
-            padding: 25px;
-        }
-
-        .project-info h4 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .project-info p {
-            color: #aaaaaa;
-            margin-bottom: 20px;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .project-link {
-            padding: 8px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .project-link.primary {
-            background-color: #f708a7;
-            color: white;
-        }
-
-        .project-link.secondary {
-            background-color: transparent;
-            color: #f70b79;
-            border: 1px solid #f50689;
-        }
-
-        .project-link:hover {
-            opacity: 0.8;
-        }
-
+ 
         /* Contact Section */
         .contact-container {
             display: grid;
@@ -360,6 +284,16 @@
 
         .contact-card:hover {
             transform: translateY(-5px);
+        }
+        .card-wrapper{
+                background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex
+;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
         }
         .ask-card    {
              display: flex;
@@ -446,7 +380,7 @@
 
         .form-group input,
         .form-group textarea {
-            width: 100%;
+            width: 150%;
             padding: 12px 15px;
             background-color: #333333;
             border: none;
@@ -610,6 +544,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#Resume">Resume</a></li>
             <li><a href="#Ask">Ask</a></li>
 
         </ul>
@@ -629,7 +564,7 @@
         <h3>About Me</h3>
         <div class="about-content">
             <div class="profile-img">
-                <img src="<a href="https://ibb.co/jkL3xXqS"><img src="https://i.ibb.co/pj34sFNS/IMG-20250711-WA0028.jpg" alt="IMG-20250711-WA0028" border="0"></a>
+                <img src="https://i.ibb.co/pj34sFNS/IMG-20250711-WA0028.jpg" alt="IMG-20250711-WA0028" border="0"></a>
             </div>
             <div class="about-text">
                 <p>A curious mind in code and a creative soul in fashion—that’s who I am.
@@ -648,18 +583,18 @@ Currently pursuing my BTech in Computer Science Engineering, I live at the inter
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fas fa-code"></i>
-                <h4>Web Experiences</h4>
-                <p>HTML, CSS, JavaScript, c++ </p>
+                <h4>Full Stack Developer</h4>
+                <p>HTML, CSS, JavaScript, c++, Node.js, Python</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-mobile-alt"></i>
                 <h4>Data Analysis & visualization</h4>
-                <p>MS Excel, MS Word & PowerPoint</p>
+                <p>MS Excel, MS Word, PowerPoint</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-server"></i>
-                <h4>Backend Development</h4>
-                <p>Node.js, Python, SQL</p>
+                <h4>Project Management & Team Collaboration.</h4>
+                <p>Task coordination, Effective Communication.</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-paint-brush"></i>
@@ -693,6 +628,16 @@ Currently pursuing my BTech in Computer Science Engineering, I live at the inter
                         <a href="tel:8178126477">8178126477</a>
                     </div>
                 </div>
+                <section id="Resume" class="ask-card">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Resume</h4>
+                        <a href="https://raw.githubusercontent.com/gurleenkaur0202/portfoliogurleen/main/GURLEEN%20KAUR%20resume.pdf">Download My Resume</a>
+                    </div>
+                </div>
                 <section id="Ask" class="ask-card">
                 <div class="contact-card">
                     <div class="contact-icon">
@@ -704,36 +649,42 @@ Currently pursuing my BTech in Computer Science Engineering, I live at the inter
                     </div>
                 </div>
             </div>
-            
-             <div class="contact-form">
-                <div class="ask-card">
-                    <div class="ask-header">
-                    <div class="ask-circle">
-                        <i class="fas fa-comment-dots"></i>
-                    </div>
-                    <div class="ask-tittle">Ask Me Anything</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                    
-                </form>
-            </div>
-        </div>
+
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Web3Forms Access Key -->
+<input type="hidden" name="access_key" value="c97d5d73-5df3-4ccb-9150-972ea6f2834d">
+  <!-- Ask Me Anything Section -->
+   <div class="ask-container"
+  <div class="ask-card">
+    <div class="ask-header">
+      <div class="ask-circle">
+        <i class="fas fa-comment-dots"></i>
+      </div>
+      <div class="ask-title">Ask Me Anything</div>
+    </div>
+  </div>
+
+  <!-- Form Fields -->
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="submit-btn">Send Message</button>
+
+</div>
     </section>
               <!-- Footer -->
     <footer>
